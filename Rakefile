@@ -1,4 +1,4 @@
-SSH = 'ssh ubuntu@52.16.110.230'
+SSH = 'ssh centos@52.16.160.42'
 
 
 desc "Run Puppet on ENV['CLIENT']"
