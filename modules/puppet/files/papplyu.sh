@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo puppet apply /home/ubuntu/puppets/manifests/site.pp --modulepath=/home/centos/manifests/modules/ $*
+sudo puppet apply /home/ubuntu/puppet/manifests/site.pp --modulepath=/home/ubuntu/puppet/modules/ $*
