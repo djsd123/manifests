@@ -1,6 +1,6 @@
 REPO = 'git@github.com:djsd123/manifests.git'
 
-SSH = 'ssh -At -i /home/centos/.ssh/LR-Infrastructure -l centos'
+SSH = 'ssh -At -l centos'
 
 
 desc "Run Puppet on ENV['CLIENT']"
