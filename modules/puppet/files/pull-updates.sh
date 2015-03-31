@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/centos/manifests
+cd /home/centos/puppet
 git pull && /usr/local/bin/papply
