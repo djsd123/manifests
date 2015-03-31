@@ -1,4 +1,4 @@
-SSH = 'ssh -A -i /home/${USER}/.ssh/LR-Infrastructure -l centos'
+SSH = 'ssh -A -i /home/$USER/.ssh/LR-Infrastructure -l centos'
 
 
 desc "Run Puppet on ENV['CLIENT']"
