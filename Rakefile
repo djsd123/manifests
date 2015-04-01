@@ -17,8 +17,8 @@ task :bootstrap do
   commands = <<BOOTSTRAP
     sudo hostname #{hostname} && \
     echo #{hostname} | sudo tee /etc/hostname && \
-    sudo rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm \ 
-    sudo yum update -y && sudo yum install git Puppet wget -y && \ 
+    sudo rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm && \
+    sudo yum update -y && sudo yum install git Puppet wget -y && \
     git clone #{REPO} puppet && \
     sudo puppet apply --modulepath=/home/centos/puppet/modules /home/centos/puppet/manifests/site.pp
 BOOTSTRAP
