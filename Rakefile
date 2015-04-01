@@ -16,7 +16,7 @@ task :bootstrap do
 	hostname = ENV['HOSTNAME'] || client
 	commands = <<BOOTSTRAP
 sudo hostname #{hostname} && \
-sudo su - c 'echo #{hostname} > /etc/hostname' && \
+sudo sh - c 'echo #{hostname} > /etc/hostname' && \
 sudo rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
 sudo yum update -y && sudo yum install git Puppet wget -y && \
 git clone #{REPO} puppet && \
