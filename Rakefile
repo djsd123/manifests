@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 REPO = 'git@github.com:djsd123/manifests.git'
 
 SSH = 'ssh -At -i /Users/mikaela/.ssh/LR-infrastructure -l centos'
-=======
-SSH = 'ssh ubuntu@52.16.110.230'
->>>>>>> parent of c84d361... amending client
 
 
 desc "Run Puppet on ENV['CLIENT']"
